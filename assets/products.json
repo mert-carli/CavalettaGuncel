@@ -1,0 +1,311 @@
+[
+  {
+    "id": "luna-supla",
+    "name": "Luna Supla",
+    "collection": "Tavola",
+    "tagline": "Sofranın merkezinde zamansız zarafet.",
+    "file": "Cavaletta Luna Supla Placemat.png",
+    "dimensions": "Ø 36 cm • 7 mm Tok Dokuma",
+    "specs": [
+      "%100 Yapıştırıcısız El Dikişi",
+      "Isıya ve Leke Dirençli İp",
+      "30°C'de Yıkanabilir",
+      "Hakiki Deri Arma Detayı"
+    ],
+    "description": "Akdeniz doğallığını sofralarınıza taşıyan Luna Supla, geri dönüştürülmüş polyester ipin spiral formuyla el işçiliğinde buluştuğu imza bir tasarım. Tabak altlığı olarak masanızı ısı ve çiziklerden korurken, heykelsi bir zemin oluşturur."
+  },
+  {
+    "id": "tavola-mat",
+    "name": "Tavola Mat",
+    "collection": "Tavola",
+    "tagline": "Geniş sofralar için oval formun dinginliği.",
+    "file": "Cavaletta Tavola Mat.png",
+    "dimensions": "35 × 50 cm Geniş Oval",
+    "specs": [
+      "Geniş Alanlı Oval Form",
+      "Çizilmelere Karşı Tam Koruma",
+      "Geri Dönüştürülmüş Kordon",
+      "Formunu Koruyan Tok Dikiş"
+    ],
+    "description": "Dikdörtgen ve oval masalara kusursuz uyum sağlayan Tavola Mat; servis tabakları, çatal-bıçak takımları ve kadehler için ferah ve bütüncül bir sunum alanı açar. Günlük kahvaltılardan özenli akşam davetlerine uzanan sofistike doku."
+  },
+  {
+    "id": "tazza-coaster",
+    "name": "Tazza Coaster",
+    "collection": "Tavola",
+    "tagline": "Kahve anlarının zarif eşlikçisi.",
+    "file": "Cavaletta Tazza Coaster.png",
+    "dimensions": "Ø 14 cm",
+    "specs": [
+      "Isı yalıtımlı sıkı spiral dikiş",
+      "Orijinal deri etiket detayı",
+      "Kompakt ve hafif gövde"
+    ],
+    "description": "Fincan ve kupalar için ideal boyutta tasarlanan Tazza, sıcak içeceklerin masanızda iz bırakmasını önlerken minimalist deri detayıyla sunumu tamamlar."
+  },
+  {
+    "id": "lino-coaster-set",
+    "name": "Lino Coaster Set",
+    "collection": "Tavola",
+    "tagline": "Doğal dokunun üçlü uyumu.",
+    "file": "Cavaletta Lino Coaster Set.jpg",
+    "dimensions": "Ø 12 cm (3'lü Set)",
+    "specs": [
+      "3'lü set avantajı",
+      "Kompakt depolama ve toka detayı",
+      "Çoklu servislerde doğal ritim"
+    ],
+    "description": "Üçlü set halinde sunulan Lino Bardak Altlığı, çoklu servislerde masaya doğal bir ritim katar. Kadeh ve bardaklar için pratik ve şık koruma."
+  },
+  {
+    "id": "fiore-runner-set",
+    "name": "Fiore Runner Set",
+    "collection": "Tavola",
+    "tagline": "Masanın ortasında heykelsi bir çiçek silueti.",
+    "file": "Cavaletta Fiore Coaster Set.png",
+    "dimensions": "Merkez Ø 36 cm • Toplam Boy 85 cm",
+    "specs": [
+      "Çok Parçalı Organik Mimari",
+      "Nihale & Masa Ortası Runner",
+      "Birbirine Kenetli Sağlam Dikiş",
+      "Özel Davet Sunum Odak Noktası"
+    ],
+    "description": "Çiçek yapraklarının organik ritminden ilham alan Fiore, merkezdeki büyük servis alanını çevreleyen dairesel modülleriyle masanın odak noktası haline gelir. Hem sanatsal bir orta runner hem de sıcak tencereler için şık bir nihaledir."
+  },
+  {
+    "id": "pane-basket",
+    "name": "Pane Basket",
+    "collection": "Tavola",
+    "tagline": "Sıcak ekmekler ve taze meyveler için doğal yuva.",
+    "file": "Cavaletta Pane Basket.png",
+    "dimensions": "32 × 20 × 10 cm Derin Oval",
+    "specs": [
+      "Gıdayla Temasa Uygun Yapı",
+      "Yapıştırıcısız Saf Dikiş",
+      "Yıkanabilir Kolay Kurur İp",
+      "Pirinç Perçinli Deri Arma"
+    ],
+    "description": "Oval formu ve derin gövdesiyle Pane Sepet; fırından yeni çıkmış çıtır ekmekleri, simitleri veya mevsim meyvelerini sofraya taşımak için el dikişiyle şekillendirildi. Ekmek kırıntılarını içeride tutarken sofraya samimiyet kazandırır."
+  },
+  {
+    "id": "vela-napkin-holder",
+    "name": "Vela Napkin Holder",
+    "collection": "Tavola",
+    "tagline": "Dairesel formda pratik peçete şıklığı.",
+    "file": "Cavaletta Vela Napkin Holder.png",
+    "dimensions": "Ø 24 cm • Y: 9 cm",
+    "specs": [
+      "Çıkarılabilir delikli kapak",
+      "Kompakt ve korunaklı tasarım",
+      "Tozdan koruyan ergonomik boşluk"
+    ],
+    "description": "Kapaklı silindirik yapısı ve ortasındaki ergonomik çekme boşluğuyla peçeteleri tozdan korur, tek hareketle sofraya şıklık katar."
+  },
+  {
+    "id": "ovale-napkin-holder",
+    "name": "Ovale Napkin Holder",
+    "collection": "Tavola",
+    "tagline": "Geniş sofraların oval peçete düzeni.",
+    "file": "Cavaletta Ovale Napkin Holder.png",
+    "dimensions": "28 × 18 × 8 cm",
+    "specs": [
+      "Geniş oval çekme yuvası",
+      "Tok ve dengeli yan paneller",
+      "Klasik katlı peçetelere tam uyum"
+    ],
+    "description": "Klasik katlı peçetelere tam uyum sağlayan geniş hazneli oval peçetelik. Açık mutfak tezgahında veya masada düzen sağlar."
+  },
+  {
+    "id": "duo-organizer",
+    "name": "Duo Organizer",
+    "collection": "Ordine",
+    "tagline": "İki bölmeli akıllı düzen.",
+    "file": "Cavaletta Duo Organizer.jpg",
+    "dimensions": "30 × 16 × 10 cm Bölmeli Sepet",
+    "specs": [
+      "Sabit Entegre Separatör Duvar",
+      "Geniş Çift Bölmeli Hacim",
+      "Formunu Koruyan Dik Duruş",
+      "Hakiki Deri Cavaletta Künye"
+    ],
+    "description": "Ortadan ikiye ayrılmış sabit bölmesiyle Duo Organizer; banyoda cilt bakım şişelerini, makyaj masasında fırçaları, çalışma masasında ise not defteri ve kalemleri kusursuz bir uyumla ayrıştırır."
+  },
+  {
+    "id": "ovale-organizer-set",
+    "name": "Ovale Organizer Set",
+    "collection": "Ordine",
+    "tagline": "İç içe geçen düzen armonisi.",
+    "file": "Cavaletta Ovale Organizer Set.png",
+    "dimensions": "S: 20×14 cm | M: 25×18 cm | L: 30×22 cm",
+    "specs": [
+      "3 Farklı Boyutta Oval Aile",
+      "İç İçe Geçebilir (Nesting) Tasarım",
+      "Her Boyda Bağımsız Deri Etiket",
+      "Dayanıklı Geri Dönüşümlü İp"
+    ],
+    "description": "Farklı boyuttaki üç oval sepetten oluşan Ovale Set; banyo dolaplarında, antre konsolunda ve gardıroplarda eşyalarınızı hiyerarşik bir düzene kavuşturur. Kullanılmadığında iç içe geçerek yer tasarrufu sağlar."
+  },
+  {
+    "id": "nido-organizer-set",
+    "name": "Nido Organizer Set",
+    "collection": "Ordine",
+    "tagline": "Kusursuz dairesel formlar, sıcak saklama alanları.",
+    "file": "Cavaletta Nido Organizer Set.png",
+    "dimensions": "S: Ø 16 cm | M: Ø 20 cm | L: Ø 24 cm",
+    "specs": [
+      "3'lü Dairesel Kase Formu",
+      "Yumuşak ve Güvenli Kenarlar",
+      "Masaüstü ve Komodin Uyumlu",
+      "Çizilmez Mobilya Dostu Taban"
+    ],
+    "description": "Yuvarlak çanak formuyla mekanın keskin köşelerini yumuşatan Nido Set, anahtarlardan saatlere, banyo pamuklarından kişisel aksesuarlara kadar dağılan eşyaları derleyip toparlar."
+  },
+  {
+    "id": "nido-lidded-basket",
+    "name": "Nido Lidded Basket",
+    "collection": "Ordine",
+    "tagline": "Gözden uzak, stile yakın saklama.",
+    "file": "Cavaletta Nido Lidded Basket.png",
+    "dimensions": "Ø 24 cm • Y: 14 cm",
+    "specs": [
+      "Tam kapanan entegre kapak",
+      "Özel tasarım deri tutaç",
+      "Konsol ve sehpa üzerinde dekoratif dinginlik"
+    ],
+    "description": "Deri kulplu ve pirinç perçinli kapağıyla dağınıklığı tamamen gizleyen kapaklı sepet. Konsol ve sehpa üzerinde dekoratif dinginlik."
+  },
+  {
+    "id": "nero-box",
+    "name": "Nero Box",
+    "collection": "Ordine",
+    "tagline": "Minimalist kutu formunda kapaklı konfor.",
+    "file": "Cavaletta Nero Box.png",
+    "dimensions": "Ø 22 cm • Y: 12 cm",
+    "specs": [
+      "Tok kordon gövde yapısı",
+      "Toz almayan korumalı kapak",
+      "Ergonomik açma kulakçığı"
+    ],
+    "description": "Düz hatlı derin silindiri ve ergonomik açma kulakçığıyla kablolar, mücevherler ve özel eşyalar için güvenli saklama kutusu."
+  },
+  {
+    "id": "casa-mini-basket",
+    "name": "Casa Mini Basket",
+    "collection": "Ordine",
+    "tagline": "Tek bir form, sınırsız kullanım senaryosu.",
+    "file": "Cavaletta Casa Mini Basket.png",
+    "dimensions": "Ø 13 cm • Y: 12 cm Kompakt",
+    "specs": [
+      "Banyo: Tarak, fırça ve losyonlar",
+      "Çalışma: Kalemlik ve cetveller",
+      "Salon: Doğal saksı kılıfı",
+      "İkram: Ceviz & kuruyemiş kasesi"
+    ],
+    "description": "Casa Mini; evin her odasında yeni bir görev üstlenen eğlenceli ve işlevsel bir tasarım. Banyo, çalışma masası, salon ve ikram için ideal kompakt form."
+  },
+  {
+    "id": "sole-basket",
+    "name": "Sole Basket",
+    "collection": "Ordine",
+    "tagline": "Geniş oval hatlarla sergileme zarafeti.",
+    "file": "Cavaletta Sole Basket.png",
+    "dimensions": "34 × 22 × 8 cm Alçak Oval",
+    "specs": [
+      "Ferah ve Alçak Kenar Tasarımı",
+      "Konsol ve Sehpa Tepsisi İşlevi",
+      "Dikiş Mukavemeti Yüksek Taban",
+      "Hakiki Deri Cavaletta Rozeti"
+    ],
+    "description": "Alçak kenarlı ve ferah tabanlı yapısıyla Sole Sepet; sehpa üstlerinde dergiler ve mumlar, antre dresuarında günlük anahtarlıklar veya yatak odasında takı tepsisi olarak heykelsi bir sergileme alanı sunar."
+  },
+  {
+    "id": "terra-planter-set",
+    "name": "Terra Planter Set",
+    "collection": "Casa",
+    "tagline": "Bitkilerinize doğanın en sıcak dokunuşu.",
+    "file": "Cavaletta Terra Planter.jpg",
+    "dimensions": "S: Ø 18 cm | M: Ø 24 cm | L: Ø 30 cm",
+    "specs": [
+      "3 Farklı Saksı Boyuna Uyum",
+      "Kök Yalıtımı Sağlayan Tok Yapı",
+      "Su Damlamalarına Dirençli",
+      "İç İçe Geçen Kolay Depolama"
+    ],
+    "description": "Plastik ve seramik saksıların soğuk görüntüsünü sıcacık bir Akdeniz atmosferine dönüştüren Terra Saksı Kılıfı; orkideler, sukulentler ve salon yaprakları için nefes alan, kökleri koruyan bir kılıf vazifesi görür."
+  },
+  {
+    "id": "piccolo-waste-bin",
+    "name": "Piccolo Waste Bin",
+    "collection": "Casa",
+    "tagline": "Gündelik ihtiyaçlara estetik bir kamuflaj.",
+    "file": "Cavaletta Piccolo Waste Bin.png",
+    "dimensions": "Ø 20 cm • Yükseklik: 22 cm",
+    "specs": [
+      "Çıkarılabilir Dairesel Kapak",
+      "İç Kova / Poşet Kamuflajı",
+      "Yıkanabilir Hijyenik İp",
+      "Deri Detaylı Estetik Kapak Tutaç"
+    ],
+    "description": "Geleneksel çöp kutularının endüstriyel soğukluğundan uzak, el dikimi kordon dokusu ve özel kapak tasarımıyla banyolarda, makyaj masalarında veya çalışma odalarında dekorasyonu bozmayan şık bir atık kutusu."
+  },
+  {
+    "id": "alba-towel-basket",
+    "name": "Alba Towel Basket",
+    "collection": "Sereno",
+    "tagline": "Spa dinginliği, rulo havluların zarafeti.",
+    "file": "Cavaletta Alba Towel Basket.png",
+    "dimensions": "Ø 32 cm • Y: 14 cm (3-5 Rulo Havlu)",
+    "specs": [
+      "Rulo Havlu İçin İdeal Derinlik",
+      "Neme ve Su Buharına Dayanıklı",
+      "Banyo Tezgahında Tok Duruş",
+      "30°C'de Kolayca Yıkanabilir"
+    ],
+    "description": "Banyolarınıza butik otel ve spa konforunu taşıyan Alba Sepet; rulo yapılmış yüz ve el havlularını düzenli bir zarafetle sergiler. Nemli banyo ortamına tam dayanıklılık gösterir ve formunu korur."
+  },
+  {
+    "id": "towel-basket",
+    "name": "Towel Basket",
+    "collection": "Sereno",
+    "tagline": "Derin hazne, ferah depolama konforu.",
+    "file": "Cavaletta Towel Basket.png",
+    "dimensions": "Ø 28 cm • Yükseklik: 20 cm Derin Gövde",
+    "specs": [
+      "Yüksek Kenarlı Derin Hacim",
+      "Ağır Havluları Taşıyan Tok Örgü",
+      "Banyo ve Spa Zarafeti",
+      "Doğal Bej / Krem Ton Dengesi"
+    ],
+    "description": "Daha yüksek kenarlı silindirik mimarisiyle büyük banyo havluları, bornozlar veya saç bakım gereçleri için ferah bir saklama alanı yaratan zamansız bir banyo ve spa sepeti."
+  },
+  {
+    "id": "aura-bath-mat-set",
+    "name": "Aura Bath Mat Set",
+    "collection": "Sereno",
+    "tagline": "Banyoda adımlarınızı karşılayan heykelsi konfor.",
+    "file": "Cavaletta Aura Bath Mat Set.png",
+    "dimensions": "Oval: 55×90 cm • Yuvarlak: Ø 60 cm (2'li Takım)",
+    "specs": [
+      "Özel Burgu Ajurlu El Örgüsü",
+      "Ayak Altında Tok Masaj Hissi",
+      "Hızlı Kuruyan Polyester İp",
+      "Zeminde Toplanma Yapmaz"
+    ],
+    "description": "Kataloğun en güçlü lifestyle parçalarından Aura Paspas Seti; ortasındaki burgu ajur örgüsü ve çift tonlu kontrast bordürüyle banyonuzu lüks bir spa alanına dönüştürür. Islak adımlarda sıcak, tok ve masaj etkisi uyandıran zemin konforu."
+  },
+  {
+    "id": "nido-pet-mat",
+    "name": "Nido Pet Mat",
+    "collection": "Sereno",
+    "tagline": "Evcil dostlarımıza özel tasarım konfor.",
+    "file": "Cavaletta Nido Pet Mat.png",
+    "dimensions": "Ø 45 cm (+ Kulaklar ve Püsküllü Kuyruk)",
+    "specs": [
+      "Sevimli Kulak ve Püskül Formu",
+      "Tırnak Takılmalarına Dirençli",
+      "Yıkanabilir Hijyenik Kordon",
+      "Deri Cavaletta Etiket Detayı"
+    ],
+    "description": "Kedi ve küçük ırk köpekler için kulak ve ahşap boncuklu püskül kuyruk detayıyla esprili bir şıklık sunan Nido Pet Mat; mama-su kabı altlığı veya konforlu bir dinlenme köşesi olarak evin dekorasyonunu tamamlar."
+  }
+]

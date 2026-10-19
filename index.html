@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAVALETTA — Doğal dokular. Zamansız yaşam alanları.</title>
+  <meta name="description" content="Cavaletta creates handcrafted home and lifestyle objects with a focus on texture, craftsmanship, recycled materials, functionality, and timeless design. Handcrafted for everyday living.">
+  
+  <meta name="theme-color" content="#FAF6F0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CAVALETTA — Doğal dokular. Zamansız yaşam alanları.">
+  <meta property="og:description" content="Handcrafted for everyday living. Akdeniz zanaatı, %100 yapıştırıcısız el dikişi ve geri dönüştürülmüş kordon dokularıyla şekillenen 2026 koleksiyonu.">
+  <meta property="og:image" content="assets/lifestyle_spread_photo.jpg">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CAVALETTA — Doğal dokular. Zamansız yaşam alanları.">
+  <meta name="twitter:description" content="Handcrafted for everyday living. Akdeniz zanaatı, %100 yapıştırıcısız el dikişi ve geri dönüştürülmüş kordon dokularıyla şekillenen 2026 koleksiyonu.">
+  <meta name="twitter:image" content="assets/lifestyle_spread_photo.jpg">
+  
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" type="image/png" href="assets/brand/cavaletta-symbol-terracotta.png">
+  <link rel="apple-touch-icon" href="assets/brand/cavaletta-symbol-terracotta.png">
+  
+  <!-- Google Fonts: Cormorant Garamond (Catalog Serif) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Reading Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Ambient Mediterranean Shadows Background Accent -->
+  <div class="ambient-shadows" aria-hidden="true"></div>
+
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Left Navigation -->
+      <nav class="nav-links-left" aria-label="Ana Menü">
+        <a href="#about" class="nav-item">Hakkımızda</a>
+        <a href="#craft" class="nav-item">Zanaat</a>
+        <a href="#collection" class="nav-item">Koleksiyon</a>
+        <a href="#texture" class="nav-item">Malzeme</a>
+        <a href="#care" class="nav-item">Bakım</a>
+      </nav>
+
+      <!-- Center Logo -->
+      <div class="nav-brand-center">
+        <a href="#" class="brand-logo-link" aria-label="Cavaletta Ana Sayfa">
+          <img src="assets/brand/cavaletta-logo-charcoal.png" alt="CAVALETTA" class="brand-logo-img">
+        </a>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="nav-actions-right">
+        <button type="button" class="catalog-pill-btn" data-action="open-catalog" data-page="1">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          2026 Kataloğu
+        </button>
+
+        <a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="pdf-download-link" title="Kataloğu PDF olarak indir">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          PDF İndir
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="nav-toggle-btn" id="navToggle" aria-label="Menüyü Aç">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/brand/cavaletta-logo-charcoal.png" alt="CAVALETTA" class="drawer-logo">
+      <button type="button" class="drawer-close-btn" id="navDrawerClose" aria-label="Menüyü Kapat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="#about" class="drawer-link">
+        <span>Hakkımızda</span>
+        <span class="drawer-link-num">01</span>
+      </a>
+      <a href="#craft" class="drawer-link">
+        <span>Zanaat & El İşçiliği</span>
+        <span class="drawer-link-num">02</span>
+      </a>
+      <a href="#collection" class="drawer-link">
+        <span>2026 Koleksiyonu</span>
+        <span class="drawer-link-num">03</span>
+      </a>
+      <a href="#texture" class="drawer-link">
+        <span>Malzeme & Doku</span>
+        <span class="drawer-link-num">04</span>
+      </a>
+      <a href="#sustainability" class="drawer-link">
+        <span>Sürdürülebilirlik</span>
+        <span class="drawer-link-num">05</span>
+      </a>
+      <a href="#care" class="drawer-link">
+        <span>Bakım Rehberi</span>
+        <span class="drawer-link-num">06</span>
+      </a>
+      <a href="#contact" class="drawer-link">
+        <span>İletişim & B2B</span>
+        <span class="drawer-link-num">07</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer-actions">
+      <button type="button" class="btn btn-primary" data-action="open-catalog" data-page="1">
+        2026 Kataloğunu İncele
+      </button>
+      <a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="btn btn-secondary">
+        PDF Kataloğu İndir
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- =======================================================================
+         HERO SECTION (Statik & Kristal Netliğinde Terrakota Görseli)
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-wrap">
+        <picture>
+          <source srcset="assets/hero_terrakota_zeytin.webp" type="image/webp">
+          <img 
+            src="assets/hero_terrakota_zeytin.jpg" 
+            alt="Cavaletta — Terrakota duvarda Akdeniz zeytin dalları ve doğal el yapımı dokular" 
+            class="hero-bg-img"
+          >
+        </picture>
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-card">
+          
+          <div class="hero-pretitle">
+            <span class="hero-pretitle-line"></span>
+            <span>HOME DETAILS &bull; FOR A CALMER LIFE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Doğal dokular.<br>
+            <em>Zamansız</em> yaşam alanları.
+          </h1>
+
+          <p class="hero-supporting">
+            Handcrafted for everyday living. Günlük yaşamın ritmini yavaşlatan, dokunma hissi uyandıran ve Akdeniz sıcaklığını evinize taşıyan el dikimi parçalar.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collection" class="btn btn-primary">
+              Koleksiyonu Keşfet
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+
+            <button type="button" class="btn btn-ghost-light" data-action="open-catalog" data-page="1">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              2026 Kataloğu
+            </button>
+          </div>
+
+        </div>
+
+        <div class="hero-bottom-bar">
+          <div class="hero-categories-list">
+            <span>01 / Tavola</span>
+            <span>02 / Ordine</span>
+            <span>03 / Casa</span>
+            <span>04 / Sereno</span>
+          </div>
+
+          <div class="hero-scroll-indicator">
+            <span>Aşağı Kaydırın</span>
+            <span class="hero-scroll-line"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         BRAND STORY SPREAD (Catalog Page 2 Spread Layout)
+         ======================================================================= -->
+    <section class="brand-story-section" id="about">
+      <div class="container">
+        <div class="story-spread-grid">
+          
+          <!-- Editorial Lifestyle Photography -->
+          <div class="story-visual-col">
+            <div class="story-image-frame">
+              <picture>
+                <source srcset="assets/lifestyle_story_p2.webp" type="image/webp">
+                <img 
+                  src="assets/lifestyle_story_p2.jpg" 
+                  alt="Cavaletta el yapımı sepet ve masa aksesuarları kompozisyonu" 
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+            <div class="story-image-caption">
+              <span>Akdeniz Doğallığı & Traverten</span>
+              <span>Sayfa 02 &bull; Koleksiyon 2026</span>
+            </div>
+          </div>
+
+          <!-- Editorial Story Content -->
+          <div class="story-content-col">
+            <img src="assets/brand/cavaletta-symbol-terracotta.png" alt="Cavaletta Mark" class="story-brand-mark">
+            
+            <span class="eyebrow">MARKA FELSEFESİ</span>
+            
+            <h2 class="story-heading">
+              Doğal dokular.<br>
+              Zamansız yaşam alanları.
+            </h2>
+
+            <div class="story-divider"></div>
+
+            <p class="story-body-text">
+              Cavaletta, günlük yaşamın işlevsel parçalarını sıcak, sade ve zamansız tasarımlara dönüştürür. El işçiliğiyle şekillendirilen her parça, yaşam alanlarında yalnızca bir ihtiyacı karşılamak için değil, bulunduğu ortamın sakin bir parçası olmak için tasarlanır.
+            </p>
+
+            <p class="story-body-text">
+              Akdeniz mimarisinin yalınlığı, çağdaş iç mekan estetiği ve usta ellerin sabrı... Her spiral dikiş kordonu, kimyasal yapıştırıcı kullanılmadan, formunu koruyan saf el dikişi kilitleriyle üretilir.
+            </p>
+
+            <span class="story-signoff">
+              Handcrafted for everyday living.
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CRAFTSMANSHIP SECTION (CRAFTED BY HAND)
+         ======================================================================= -->
+    <section class="craftsmanship-section" id="craft">
+      <div class="container">
+        
+        <div class="craft-header-wrap">
+          <span class="eyebrow craft-eyebrow">01 &bull; ZANAAT & EL İŞÇİLİĞİ</span>
+          <h2 class="craft-main-title">CRAFTED BY HAND</h2>
+          <p class="craft-lead-desc">
+            Doğal dokularla, özenle ve zamana değer katan parçalar sunuyoruz.
+          </p>
+        </div>
+
+        <div class="craft-layout-grid">
+          
+          <!-- Close-Up Texture Hero Image -->
+          <div class="craft-hero-visual">
+            <div class="craft-hero-img-wrap">
+              <picture>
+                <source srcset="assets/macro_texture_hero.webp" type="image/webp">
+                <img 
+                  src="assets/macro_texture_hero.jpg" 
+                  alt="Cavaletta el yapımı örgü dokusu, pirinç perçinli hakiki deri arma detayı" 
+                  loading="lazy"
+                >
+              </picture>
+              <div class="craft-badge-floating">
+                <div class="craft-badge-title">Saf Spiral Dikiş</div>
+                <div class="craft-badge-sub">%100 Yapıştırıcısız İşçilik</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Core Qualities with authentic macro images -->
+          <div class="craft-qualities-list">
+            
+            <!-- 01: Handmade -->
+            <div class="quality-item">
+              <div class="quality-thumb-wrap">
+                <img src="assets/craftsmanship/craft_handmade.jpg" alt="İğne ve el dikişi detayı" class="quality-thumb" loading="lazy">
+              </div>
+              <div class="quality-info">
+                <span class="quality-num">01 &bull; İŞÇİLİK</span>
+                <h3 class="quality-title">HANDMADE</h3>
+                <p class="quality-desc">Her parça el işçiliğiyle şekillendirilir ve dikilir. Makine otomasyonu yerine zanaatkar ellerin sabrı ve dikiş ustalığı.</p>
+              </div>
+            </div>
+
+            <!-- 02: Recycled Material -->
+            <div class="quality-item">
+              <div class="quality-thumb-wrap">
+                <img src="assets/craftsmanship/craft_recycled.jpg" alt="Geri dönüştürülmüş kordon dokusu" class="quality-thumb" loading="lazy">
+              </div>
+              <div class="quality-info">
+                <span class="quality-num">02 &bull; HAMMADDE</span>
+                <h3 class="quality-title">RECYCLED MATERIAL</h3>
+                <p class="quality-desc">Dayanıklı geri dönüştürülmüş polyester ip kullanılır. Doğaya duyarlı, solmaya ve neme karşı yüksek dirençli hammadde.</p>
+              </div>
+            </div>
+
+            <!-- 03: Glue-Free -->
+            <div class="quality-item">
+              <div class="quality-thumb-wrap">
+                <img src="assets/craftsmanship/craft_gluefree.jpg" alt="Yapıştırıcısız kenetli spiral örgü" class="quality-thumb" loading="lazy">
+              </div>
+              <div class="quality-info">
+                <span class="quality-num">03 &bull; SAFLIK</span>
+                <h3 class="quality-title">GLUE-FREE</h3>
+                <p class="quality-desc">Üretim sürecinde hiçbir kimyasal yapıştırıcı kullanılmaz. Ürün formunu ve sağlamlığını saf dikiş kilitlerinden alır.</p>
+              </div>
+            </div>
+
+            <!-- 04: Washable -->
+            <div class="quality-item">
+              <div class="quality-thumb-wrap">
+                <img src="assets/craftsmanship/craft_washable.jpg" alt="Su damlacıkları ve su direnci" class="quality-thumb" loading="lazy">
+              </div>
+              <div class="quality-info">
+                <span class="quality-num">04 &bull; BAKIM</span>
+                <h3 class="quality-title">WASHABLE: 30°C</h3>
+                <p class="quality-desc">Çamaşır makinesinde 30°C hassas programda veya ılık suda elde yıkanabilir. Günlük yaşama uyum sağlayan hijyen.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Editorial Note -->
+        <div class="craft-editorial-note">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <p>
+            El işçiliğinin doğası gereği oluşabilecek küçük ton ve doku farklılıkları, her Cavaletta parçasını kendine özgü kılar.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         COLLECTION / PRODUCTS SECTION (All 21 Products)
+         ======================================================================= -->
+    <section class="collection-section" id="collection">
+      <div class="container">
+        
+        <div class="collection-header-row">
+          <div class="collection-title-wrap">
+            <span class="eyebrow">COLLECTION 2026</span>
+            <h2 class="collection-title">The Cavaletta Collection</h2>
+            <p class="collection-subtitle">
+              21 parçalık imzalı seçki. Her oda için işlevsel formlar, tok örgü dokuları ve zamansız detaylar.
+            </p>
+          </div>
+
+          <button type="button" class="btn btn-secondary" data-action="open-catalog" data-page="31">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            Katalog Seçkisini Aç (S. 31)
+          </button>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="collection-controls-wrap">
+          
+          <!-- Category Filter Bar -->
+          <div class="collection-filter-bar" role="tablist">
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">
+              Tüm Koleksiyon (21)
+            </button>
+            <button type="button" class="filter-btn" data-filter="tavola" role="tab" aria-selected="false">
+              01 / Tavola &bull; Masa (8)
+            </button>
+            <button type="button" class="filter-btn" data-filter="ordine" role="tab" aria-selected="false">
+              02 / Ordine &bull; Düzen (7)
+            </button>
+            <button type="button" class="filter-btn" data-filter="casa" role="tab" aria-selected="false">
+              03 / Casa &bull; Yaşam (2)
+            </button>
+            <button type="button" class="filter-btn" data-filter="sereno" role="tab" aria-selected="false">
+              04 / Sereno &bull; Banyo & Spa (4)
+            </button>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="collection-search-box">
+            <div class="search-input-inner">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input 
+                type="text" 
+                id="productSearchInput" 
+                class="product-search-input" 
+                placeholder="Model veya oda ara (supla, sepet, paspas...)" 
+                aria-label="Koleksiyonda ürün ara"
+                autocomplete="off"
+              >
+              <button type="button" id="productSearchClear" class="product-search-clear" aria-label="Aramayı Temizle" style="display: none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <span class="search-count-badge" id="productSearchCount">21 Parça</span>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="product-grid" id="productGrid">
+          <!-- Rendered via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         MATERIAL STORY SECTION ("THE BEAUTY OF TEXTURE")
+         ======================================================================= -->
+    <section class="texture-section" id="texture">
+      <div class="container">
+        <div class="texture-split-grid">
+          
+          <div class="texture-visual-side">
+            <div class="texture-image-wrap">
+              <picture>
+                <source id="texturePictureSource" srcset="catalog_pages/page_05.webp" type="image/webp">
+                <img 
+                  id="textureImg"
+                  src="catalog_pages/page_05.jpg" 
+                  alt="Akdeniz sofrasında Luna Supla ve seramik kaselerin dokusal uyumu" 
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+          </div>
+
+          <div class="texture-content-side">
+            <span class="eyebrow">DOKUNSAL DENEYİM</span>
+            <h2 class="texture-title">The Beauty of Texture</h2>
+            
+            <p class="texture-intro-text">
+              Bir nesneye dokunduğunuzda hissettiğiniz güven ve sakinlik, onun malzemesinde başlar. Cavaletta'da kordon kalınlığı, spiral dikiş sıklığı ve yüzey sıcaklığı bir araya gelerek gözü yormayan heykelsi bir ritim oluşturur.
+            </p>
+
+            <!-- Texture Interactive Tabs -->
+            <div class="texture-tabs-nav" role="tablist">
+              <button type="button" class="texture-tab-btn is-active" data-texture="spiral" role="tab">
+                01 / Spiral Örgü
+              </button>
+              <button type="button" class="texture-tab-btn" data-texture="leather" role="tab">
+                02 / Hakiki Deri & Pirinç
+              </button>
+              <button type="button" class="texture-tab-btn" data-texture="resistant" role="tab">
+                03 / Su & Leke Direnci
+              </button>
+              <button type="button" class="texture-tab-btn" data-texture="tones" role="tab">
+                04 / Doğal Akdeniz Tonları
+              </button>
+            </div>
+
+            <!-- Tab Content 01 -->
+            <div class="texture-detail-card is-active" data-texture="spiral">
+              <h3 class="texture-detail-title">7 mm Tok Dokuma & Saf Dikiş</h3>
+              <p class="texture-detail-desc">
+                Her kordon tabakası bir sonrakine sağlam dikiş kilitleriyle bağlanır. Kimyasal yapıştırıcı barındırmayan bu yapı, esnemeye karşı dirençli olup yıllarca ilk günkü dairesel ve oval formunu muhafaza eder.
+              </p>
+            </div>
+
+            <!-- Tab Content 02 -->
+            <div class="texture-detail-card" data-texture="leather">
+              <h3 class="texture-detail-title">Orijinal Deri Etiket & Pirinç Perçin</h3>
+              <p class="texture-detail-desc">
+                Cavaletta'nın imza çekirge logosunu taşıyan hakiki deri tutaçlar ve armalar, pirinç perçinlerle elde monte edilir. Zamanla kazandığı doğal patina, ürüne karakter katar.
+              </p>
+            </div>
+
+            <!-- Tab Content 03 -->
+            <div class="texture-detail-card" data-texture="resistant">
+              <h3 class="texture-detail-title">Nem ve Sıcaklık Yalıtımı</h3>
+              <p class="texture-detail-desc">
+                Geri dönüştürülmüş polyester lifler hidrofobik karakteri sayesinde sıvıyı emmez, yüzeyinde damlacık halinde tutar. Masalarınızı sıcak kupalardan ve tencerelerden korurken banyoda neme meydan okur.
+              </p>
+            </div>
+
+            <!-- Tab Content 04 -->
+            <div class="texture-detail-card" data-texture="tones">
+              <h3 class="texture-detail-title">Traverten, Taş ve Toprak Uyumu</h3>
+              <p class="texture-detail-desc">
+                Krem, kum beji, pişmiş toprak ve derin kömür tonları... Akdeniz güneşi altında yıkanmış doğal mimari yüzeylerle kusursuz bir renk harmonisi yakalar.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SUSTAINABILITY (DÖNÜŞÜMÜN SESSİZ DİLİ)
+         ======================================================================= -->
+    <section class="sustainability-section" id="sustainability">
+      <div class="container">
+        <div class="sustainability-grid">
+          
+          <div class="sustainability-left">
+            <span class="eyebrow">SESSİZ DÖNÜŞÜM</span>
+            <h2 class="sustainability-title">Zamana Direnen Sorumluluk</h2>
+            
+            <p class="sustainability-philosophy">
+              waste &rarr; transformation &rarr; new life &rarr; home
+            </p>
+
+            <p class="sustainability-desc">
+              Sürdürülebilirlik bizim için bir pazarlama sloganı değil, malzemenin özüne gösterilen saygıdır. Tüketim atıklarını çağdaş zanaatla dönüştürüyor; evinizde uzun yıllar sevgiyle kullanılacak kaliteli nesnelere hayat veriyoruz.
+            </p>
+          </div>
+
+          <div class="transformation-steps">
+            
+            <div class="trans-step-card">
+              <span class="trans-step-num">ADIM 01</span>
+              <h3 class="trans-step-title">Geri Kazanım</h3>
+              <p class="trans-step-desc">
+                Ayrıştırılan polimerler yüksek saflıkta temizlenerek dayanıklı tekstil liflerine dönüştürülür.
+              </p>
+            </div>
+
+            <div class="trans-step-card">
+              <span class="trans-step-num">ADIM 02</span>
+              <h3 class="trans-step-title">Tok Kordon</h3>
+              <p class="trans-step-desc">
+                Lifler solmayan Akdeniz tonlarıyla harmanlanarak 7 mm kalınlığında dayanıklı kordonlara eğrilir.
+              </p>
+            </div>
+
+            <div class="trans-step-card">
+              <span class="trans-step-num">ADIM 03</span>
+              <h3 class="trans-step-title">Saf El Dikişi</h3>
+              <p class="trans-step-desc">
+                Zanaatkarlarımız hiçbir toksik kimyasal veya yapıştırıcı kullanmadan formları tek tek elde diker.
+              </p>
+            </div>
+
+            <div class="trans-step-card">
+              <span class="trans-step-num">ADIM 04</span>
+              <h3 class="trans-step-title">Yaşayan Mekan</h3>
+              <p class="trans-step-desc">
+                Yıkanabilir ve dayanıklı yapısıyla nesilden nesile aktarılan zamansız bir yaşam parçası olur.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PDF CATALOG SHOWCASE SECTION
+         ======================================================================= -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="catalog-showcase-grid">
+          
+          <!-- 3D Design Book Presentation -->
+          <div class="catalog-book-presentation">
+            <div class="catalog-book-3d" data-action="open-catalog" data-page="1" role="button" tabindex="0" aria-label="2026 Kataloğunu İncelemek İçin Tıklayın">
+              <picture>
+                <source srcset="catalog_pages/page_01.webp" type="image/webp">
+                <img 
+                  src="catalog_pages/page_01.jpg" 
+                  alt="Cavaletta 2026 Basılı Katalog Kapağı" 
+                  class="catalog-cover-img"
+                >
+              </picture>
+              <div class="book-spine-effect"></div>
+            </div>
+          </div>
+
+          <!-- Catalog Meta Details -->
+          <div class="catalog-meta-side">
+            <span class="eyebrow catalog-section-eyebrow">CAVALETTA &bull; RESMİ KATALOG</span>
+            <h2 class="catalog-section-title">COLLECTION 2026</h2>
+            <div class="catalog-section-subtitle">Koleksiyonun tamamını keşfedin.</div>
+            
+            <p class="catalog-section-desc">
+              Tavola, Ordine, Casa ve Sereno serilerimizin tüm teknik ölçüleri, lifestyle kompozisyonları ve malzeme kılavuzu 34 sayfalık resmi 2026 kataloğumuzda bir araya getirildi.
+            </p>
+
+            <div class="catalog-features-list">
+              <div class="catalog-feature-item">
+                <span class="catalog-feature-dot"></span>
+                <span>34 Sayfalık Görsel Seçki</span>
+              </div>
+              <div class="catalog-feature-item">
+                <span class="catalog-feature-dot"></span>
+                <span>21 İmzalı Ürün Detayları</span>
+              </div>
+              <div class="catalog-feature-item">
+                <span class="catalog-feature-dot"></span>
+                <span>Doğal Mimari Yerleşimler</span>
+              </div>
+              <div class="catalog-feature-item">
+                <span class="catalog-feature-dot"></span>
+                <span>B2B & Toptan Sipariş Listesi</span>
+              </div>
+            </div>
+
+            <div class="catalog-action-row">
+              <button type="button" class="btn btn-ivory" data-action="open-catalog" data-page="1">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Kataloğu İncele
+              </button>
+
+              <a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="btn btn-ghost-light">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                PDF İndir
+              </a>
+
+              <a href="Cavaletta_2026_Katalog.pdf" target="_blank" rel="noopener" class="btn btn-ghost-light" title="Yeni Sekmede Aç">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Yeni Sekmede Aç
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CARE & USAGE GUIDE ("MADE TO LIVE WITH YOU" - Catalog Page 32)
+         ======================================================================= -->
+    <section class="care-section" id="care">
+      <div class="container">
+        
+        <div class="care-header-wrap">
+          <span class="eyebrow">BAKIM VE KULLANIM KILAVUZU</span>
+          <h2 class="care-title">Made to Live with You</h2>
+          <div class="care-subtitle">Her parça uzun ömürlü bir yol arkadaşı olarak tasarlandı.</div>
+        </div>
+
+        <div class="care-cards-grid">
+          
+          <div class="care-card">
+            <span class="care-card-num">01 &bull; MALZEME</span>
+            <h3 class="care-card-title">Dayanıklı Lifler</h3>
+            <p class="care-card-text">
+              Dayanıklı ve çevreye duyarlı geri dönüştürülmüş polyester ip. Renk solmasına, neme ve günlük aşınmaya karşı yüksek direnç gösterir.
+            </p>
+          </div>
+
+          <div class="care-card">
+            <span class="care-card-num">02 &bull; ÜRETİM</span>
+            <h3 class="care-card-title">Zanaatkar Ustalığı</h3>
+            <p class="care-card-text">
+              Her parça zanaatkar ustalığıyla el yapımı ve el dikimi olarak tek tek üretilir. Kenetlenmiş dikişlerle maksimum dayanıklılık sağlanır.
+            </p>
+          </div>
+
+          <div class="care-card">
+            <span class="care-card-num">03 &bull; YAPIŞTIRICI</span>
+            <h3 class="care-card-title">Saf Dikiş Gücü</h3>
+            <p class="care-card-text">
+              Üretim sürecinde hiçbir kimyasal yapıştırıcı kullanılmaz. Ürün sağlamlığını saf dikiş kilitlerinden alır ve havayı kirletmez.
+            </p>
+          </div>
+
+          <div class="care-card">
+            <span class="care-card-num">04 &bull; YIKAMA: 30°C</span>
+            <h3 class="care-card-title">Hassas Temizlik</h3>
+            <p class="care-card-text">
+              Çamaşır makinesinde 30°C hassas programda veya ılık suda elde yıkanabilir. Ağartıcı ve kurutma makinesi kullanılmamalıdır.
+            </p>
+          </div>
+
+          <div class="care-card">
+            <span class="care-card-num">05 &bull; FORM BAKIMI</span>
+            <h3 class="care-card-title">Yeniden Şekillendirme</h3>
+            <p class="care-card-text">
+              Yıkama sonrası veya form kaybı durumunda uygun bir kalıp yardımıyla nazikçe yeniden şekillendirilebilir ve düz bir zeminde kurutulmalıdır.
+            </p>
+          </div>
+
+          <div class="care-card">
+            <span class="care-card-num">06 &bull; DOĞALLIK</span>
+            <h3 class="care-card-title">Benzersiz Karakter</h3>
+            <p class="care-card-text">
+              El işçiliğinin doğası gereği oluşabilecek küçük ton ve doku farklılıkları, her Cavaletta parçasını kendine özgü ve eşsiz kılar.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT & B2B (Catalog Page 33)
+         ======================================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-layout-grid">
+          
+          <div class="contact-info-col">
+            <span class="eyebrow">İLETİŞİM & B2B SİPARİŞ</span>
+            <h2 class="contact-title">Yaşam Alanlarınıza Birlikte Dokunalım</h2>
+            <div class="contact-tagline">Home details for a calmer life.</div>
+
+            <div class="contact-channels-list">
+              
+              <div class="contact-channel-item">
+                <div class="channel-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Resmi Web Sitesi</span>
+                  <a href="https://www.cavaletta.com.tr" target="_blank" rel="noopener" class="channel-value">www.cavaletta.com.tr</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">E-Posta & Satış</span>
+                  <div class="channel-value">info@cavaletta.com &bull; sales@cavaletta.com</div>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Instagram</span>
+                  <a href="https://instagram.com/cavalettahome" target="_blank" rel="noopener" class="channel-value">@cavalettahome</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Toptan & Kurumsal Projeler</span>
+                  <div class="channel-value">b2b@cavaletta.com</div>
+                </div>
+              </div>
+
+            </div>
+
+            <button type="button" class="btn btn-primary" data-action="open-b2b">
+              B2B Numune & Fiyat Talebi
+            </button>
+          </div>
+
+          <!-- Official QR Code Card from Page 33 -->
+          <div class="contact-qr-card">
+            <picture>
+              <img src="catalog_pages/thumb_33.jpg" alt="Cavaletta Dijital Katalog & B2B Fiyat Listesi QR Kodu" class="contact-qr-img" loading="lazy">
+            </picture>
+            <h3 class="contact-qr-title">DİJİTAL KATALOG & B2B FİYAT LİSTESİ</h3>
+            <p class="contact-qr-sub">
+              Akıllı telefonunuzun kamerasıyla tarayarak dijital kataloğa ve fiyat listesine doğrudan erişebilirsiniz.
+            </p>
+            <button type="button" class="btn btn-secondary" data-action="open-catalog" data-page="33">
+              Katalogda Görüntüle
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       FOOTER
+       ======================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-row">
+        
+        <div class="footer-brand-side">
+          <img src="assets/brand/cavaletta-logo-ivory.png" alt="CAVALETTA" class="footer-logo-img">
+          <div class="footer-philosophy">Doğal dokular. Zamansız yaşam alanları.</div>
+          <div class="footer-supporting">Handcrafted for everyday living.</div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">KOLEKSİYONLAR</div>
+          <ul class="footer-nav-list">
+            <li><a href="#collection" class="footer-nav-link">Tavola &bull; Masa Koleksiyonu</a></li>
+            <li><a href="#collection" class="footer-nav-link">Ordine &bull; Düzen Koleksiyonu</a></li>
+            <li><a href="#collection" class="footer-nav-link">Casa &bull; Yaşam Koleksiyonu</a></li>
+            <li><a href="#collection" class="footer-nav-link">Sereno &bull; Banyo & Spa</a></li>
+            <li><a href="#craft" class="footer-nav-link">Crafted by Hand &bull; Zanaat</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">DOKÜMANLAR & KURUMSAL</div>
+          <ul class="footer-nav-list">
+            <li><a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="footer-nav-link">2026 Kataloğu (PDF İndir)</a></li>
+            <li><a href="#" class="footer-nav-link" data-action="open-catalog" data-page="1">İnteraktif Katalog Görüntüleyici</a></li>
+            <li><a href="#care" class="footer-nav-link">Bakım & Kullanım Kılavuzu</a></li>
+            <li><a href="#" class="footer-nav-link" data-action="open-b2b">Toptan & Mimari Satış (B2B)</a></li>
+            <li><a href="https://instagram.com/cavalettahome" target="_blank" rel="noopener" class="footer-nav-link">Instagram: @cavalettahome</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          İstanbul, Türkiye &bull; Worldwide Shipping Available
+        </div>
+        <div class="footer-legal-links">
+          <span>&copy; 2026 CAVALETTA. All rights reserved.</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       PRODUCT DETAIL QUICK-VIEW MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="product-modal-dialog">
+      <button type="button" class="modal-close-btn" id="productModalClose" aria-label="Kapat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="product-modal-media">
+        <picture>
+          <source id="modalProductSource" srcset="" type="image/webp">
+          <img id="modalProductImg" src="" alt="Cavaletta Ürün">
+        </picture>
+      </div>
+
+      <div class="product-modal-body">
+        <span class="product-modal-collection" id="modalProductCollection"></span>
+        <h2 class="product-modal-title" id="modalProductName"></h2>
+        <div class="product-modal-tagline" id="modalProductTagline"></div>
+        <p class="product-modal-desc" id="modalProductDesc"></p>
+
+        <div class="product-modal-specs-wrap">
+          <div class="spec-dim-row">
+            <span class="spec-dim-label">ÖLÇÜ & FORMA:</span>
+            <span class="spec-dim-val" id="modalProductDimensions"></span>
+          </div>
+
+          <ul class="product-modal-specs-list" id="modalProductSpecs"></ul>
+        </div>
+
+        <div class="product-modal-actions">
+          <button type="button" class="btn btn-primary" id="modalCatalogJumpBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Katalogda İncele (<span class="jump-page-number"></span>)
+          </button>
+          
+          <button type="button" class="btn btn-secondary" id="modalB2bBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <line x1="20" y1="8" x2="20" y2="14"></line>
+              <line x1="23" y1="11" x2="17" y2="11"></line>
+            </svg>
+            Fiyat & B2B Talebi
+          </button>
+
+          <a href="#" id="modalWhatsappBtn" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            WhatsApp'tan Sor
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       INTERACTIVE FULLSCREEN CATALOG VIEWER MODAL
+       ======================================================================= -->
+  <div class="catalog-modal-backdrop" id="catalogModal" role="dialog" aria-modal="true" aria-hidden="true">
+    
+    <!-- Top Bar Controls -->
+    <header class="catalog-viewer-bar">
+      <div class="viewer-brand-side">
+        <img src="assets/brand/cavaletta-symbol-ivory.png" alt="Cavaletta Mark" class="viewer-logo-mark">
+        <span class="viewer-doc-title">Cavaletta 2026 Kataloğu</span>
+        <span class="viewer-page-counter" id="catalogPageCounter">1 / 34</span>
+        <span class="viewer-subtitle" id="catalogPageSubtitle">Kapak &bull; Collection 2026</span>
+      </div>
+
+      <div class="viewer-controls-side">
+        
+        <!-- Toggle View Mode (Digital vs PDF) -->
+        <button type="button" class="viewer-tool-btn" id="catalogViewToggle" title="Görüntüleme Modu Değiştir">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          Orijinal PDF Belgesi
+        </button>
+
+        <!-- Zoom Controls -->
+        <button type="button" class="viewer-tool-btn" id="catalogZoomOut" title="Uzaklaştır">-</button>
+        <button type="button" class="viewer-tool-btn" id="catalogZoomReset" title="Yakınlaştırmayı Sıfırla">100%</button>
+        <button type="button" class="viewer-tool-btn" id="catalogZoomIn" title="Yakınlaştır">+</button>
+
+        <!-- Real Download -->
+        <a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="viewer-tool-btn" title="PDF Olarak İndir">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          İndir
+        </a>
+
+        <!-- Open in New Tab -->
+        <a href="Cavaletta_2026_Katalog.pdf" target="_blank" rel="noopener" class="viewer-tool-btn" title="PDF'i Yeni Sekmede Aç">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Yeni Sekme
+        </a>
+
+        <!-- Close Button -->
+        <button type="button" class="viewer-close-btn" id="catalogModalClose" aria-label="Kataloğu Kapat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Collection Bookmarks Bar -->
+    <nav class="catalog-bookmarks-bar" id="catalogBookmarks" aria-label="Katalog Bölümleri"></nav>
+
+    <!-- Main Viewer Stage -->
+    <div class="catalog-stage">
+      
+      <!-- Digital Flip Mode -->
+      <div id="catalogDigitalView" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+        <button type="button" class="catalog-nav-arrow catalog-nav-prev" id="catalogPrevBtn" aria-label="Önceki Sayfa">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="catalog-page-container">
+          <img id="catalogPageImg" src="catalog_pages/page_01.jpg" alt="Cavaletta Katalog Sayfası" class="catalog-page-img">
+        </div>
+
+        <button type="button" class="catalog-nav-arrow catalog-nav-next" id="catalogNextBtn" aria-label="Sonraki Sayfa">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Native PDF Embed Mode -->
+      <div class="catalog-pdf-embed-wrap" id="catalogPdfView">
+        <object data="Cavaletta_2026_Katalog.pdf" type="application/pdf" width="100%" height="100%">
+          <p style="color: white; padding: 2rem; text-align: center;">
+            Tarayıcınız PDF önizlemesini doğrudan desteklemiyor.<br><br>
+            <a href="Cavaletta_2026_Katalog.pdf" target="_blank" class="btn btn-primary" style="margin-right: 1rem;">PDF'i Yeni Sekmede Aç</a>
+            <a href="Cavaletta_2026_Katalog.pdf" download="Cavaletta_2026_Katalog.pdf" class="btn btn-secondary">PDF'i İndir</a>
+          </p>
+        </object>
+      </div>
+
+    </div>
+
+    <!-- Thumbnails Drawer -->
+    <div class="catalog-thumbnails-drawer">
+      <div class="catalog-thumbnails-track" id="catalogThumbnailsTrack"></div>
+    </div>
+
+  </div>
+
+  <!-- =======================================================================
+       B2B & WHOLESALE INQUIRY MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="b2bModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="b2b-modal-dialog">
+      <button type="button" class="modal-close-btn" id="b2bModalClose" aria-label="Kapat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="eyebrow">KURUMSAL & TOPTAN</span>
+      <h2 style="font-size: 2.25rem; color: var(--c-charcoal); margin-bottom: 0.5rem;">B2B Katalog & Fiyat Talebi</h2>
+      <p style="font-size: 0.9375rem; color: var(--c-charcoal-muted); line-height: 1.6;">
+        Butik oteller, mimari projeler, restoranlar ve konsept mağazalar için özel toptan fiyat listemizi ve malzeme numunesi bilgilerimizi paylaşmaktan mutluluk duyarız.
+      </p>
+
+      <form class="b2b-form-wrap" id="b2bForm">
+        <div class="b2b-form-grid">
+          
+          <div class="form-group">
+            <label class="form-label">Adınız Soyadınız *</label>
+            <input type="text" name="name" class="form-input" required placeholder="Örn. Selin Yılmaz">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Şirket / Mimarlık Ofisi *</label>
+            <input type="text" name="company" class="form-input" required placeholder="Örn. Studio Arch">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Kurumsal E-Posta *</label>
+            <input type="email" name="email" class="form-input" required placeholder="selin@studioarch.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Telefon Numarası</label>
+            <input type="tel" name="phone" class="form-input" placeholder="+90 (5XX) XXX XX XX">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label class="form-label">İlgilendiğiniz Seri / Proje Detayı</label>
+            <textarea name="message" class="form-textarea" placeholder="Tavola, Ordine veya Sereno koleksiyonları; proje büyüklüğü ve teslim tarihi beklentiniz..."></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Talebi Gönder
+          </button>
+        </div>
+      </form>
+
+      <div class="b2b-success-box" id="b2bSuccessMsg">
+        <h3 class="b2b-success-title">Talebiniz Alındı</h3>
+        <p class="b2b-success-text">
+          Teşekkürler <span class="success-name"></span>. B2B ekibimiz ve kurumsal katalog detaylarımız en kısa sürede e-posta adresinize iletilecektir.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       FLOATING ACTIONS: WHATSAPP CONCIERGE & BACK TO TOP
+       ======================================================================= -->
+  <div class="floating-actions-container" aria-label="Hızlı İşlemler">
+    
+    <!-- Back To Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Sayfanın Başına Dön" title="Yukarı Çık">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </button>
+
+    <!-- Luxury WhatsApp Concierge Pill -->
+    <a 
+      href="https://wa.me/905320000000?text=Merhaba%2C%20Cavaletta%202026%20koleksiyonu%20ve%20sipari%C5%9F%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+      target="_blank" 
+      rel="noopener" 
+      class="floating-whatsapp-btn" 
+      id="floatingWhatsappBtn"
+      aria-label="WhatsApp Müşteri ve Sipariş Hattı"
+      title="WhatsApp ile İletişime Geçin"
+    >
+      <div class="whatsapp-pulse-ring"></div>
+      <div class="whatsapp-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+      </div>
+      <div class="whatsapp-label-box">
+        <span class="whatsapp-label-top">Sipariş & Concierge</span>
+        <span class="whatsapp-label-sub">Canlı WhatsApp Hattı</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <div class="toast-content">
+      <svg class="toast-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span class="toast-message" id="toastMessage"></span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

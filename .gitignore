@@ -1,0 +1,14 @@
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.vscode/
+.idea/
+
+# Python Cache & Scratch
+__pycache__/
+*.pyc
+scratch/
+check_products.py
+catalog_text_dump.txt
