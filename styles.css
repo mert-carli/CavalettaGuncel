@@ -966,6 +966,7 @@ h1, h2, h3, h4 {
   background-color: var(--c-ivory-light);
   border: 1px solid rgba(41, 40, 36, 0.08);
   transition: transform var(--t-med), box-shadow var(--t-med);
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -1577,6 +1578,17 @@ h1, h2, h3, h4 {
 .channel-value {
   font-size: 1.0625rem;
   color: var(--c-charcoal);
+}
+
+.contact-email-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.contact-email-link:hover {
+  color: var(--c-terracotta);
+  text-decoration: underline;
 }
 
 .contact-qr-card {

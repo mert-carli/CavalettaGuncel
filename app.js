@@ -639,11 +639,8 @@
         </div>
       `;
 
-      // Event listeners to open detail
-      const clickables = card.querySelectorAll('[data-id]');
-      clickables.forEach(el => {
-        el.addEventListener('click', () => openProductModal(product.id));
-      });
+      // Event listeners to open detail (entire card is clickable)
+      card.addEventListener('click', () => openProductModal(product.id));
 
       productGrid.appendChild(card);
     });
@@ -761,7 +758,7 @@
       const waMsg = encodeURIComponent(
         `Merhaba Cavaletta ekibi, Collection 2026 seçkisindeki "${product.name}" (${product.collection} Serisi, Katalog S. ${product.catalogPage}) hakkında toptan / perakende fiyat ve sipariş detaylarını öğrenmek istiyorum.`
       );
-      modalWhatsappBtn.href = `https://wa.me/905320000000?text=${waMsg}`;
+      modalWhatsappBtn.href = `https://wa.me/905457897832?text=${waMsg}`;
     }
 
     productModal.classList.add('is-open');
@@ -1186,18 +1183,42 @@
     if (b2bForm) {
       b2bForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const nameInput = b2bForm.querySelector('input[name="name"]');
-        const name = nameInput?.value?.trim() || 'Değerli Müşterimiz';
-        
+        const name = b2bForm.querySelector('input[name="name"]')?.value?.trim() || '';
+        const company = b2bForm.querySelector('input[name="company"]')?.value?.trim() || '';
+        const email = b2bForm.querySelector('input[name="email"]')?.value?.trim() || '';
+        const phone = b2bForm.querySelector('input[name="phone"]')?.value?.trim() || '';
+        const message = b2bForm.querySelector('textarea[name="message"]')?.value?.trim() || '';
+
+        const customerName = name || 'Değerli Müşterimiz';
+
+        // Format clean WhatsApp message for the business line (0545 789 78 32)
+        let waText = `*Cavaletta — B2B & Proje Talep Formu*\n\n`;
+        waText += `👤 *Yetkili:* ${name}\n`;
+        waText += `🏢 *Firma / Ofis:* ${company}\n`;
+        waText += `📧 *E-Posta:* ${email}\n`;
+        if (phone) waText += `📞 *Telefon:* ${phone}\n`;
+        if (message) waText += `\n💬 *Talep & Proje Detayı:*\n${message}\n`;
+
+        const waUrl = `https://wa.me/905457897832?text=${encodeURIComponent(waText)}`;
+
+        // Update fallback direct link in the success dialog
+        const directLink = document.getElementById('b2bDirectWaLink');
+        if (directLink) {
+          directLink.href = waUrl;
+        }
+
         // Show success confirmation
         b2bForm.style.display = 'none';
         if (b2bSuccessMsg) {
           b2bSuccessMsg.style.display = 'block';
           const nameSpan = b2bSuccessMsg.querySelector('.success-name');
-          if (nameSpan) nameSpan.textContent = name;
+          if (nameSpan) nameSpan.textContent = customerName;
         }
 
-        showToast(`Teşekkürler ${name}, B2B talebiniz alındı.`);
+        showToast(`Teşekkürler ${customerName}, WhatsApp açılıyor...`);
+
+        // Forward to WhatsApp
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
       });
     }
   }
