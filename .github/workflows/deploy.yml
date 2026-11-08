@@ -28,25 +28,26 @@ jobs:
           node --check app.js
           node -e '
             const fs = require("fs");
-            const required = ["index.html", "styles.css", "app.js", "Cavaletta-Catalog-2026.pdf", "assets/data/products.json"];
+            const path = require("path");
+            const required = ["index.html", "styles.css", "app.js", "Cavaletta_2026_Katalog.pdf", "assets/products.json"];
             for (const f of required) {
               if (!fs.existsSync(f)) throw new Error("Missing required file: " + f);
             }
-            const data = JSON.parse(fs.readFileSync("assets/data/products.json", "utf8"));
-            for (const p of data.products || []) {
-              if (!fs.existsSync(p.image)) throw new Error("Missing product image: " + p.image);
-            }
-            for (const g of data.gallery || []) {
-              if (!fs.existsSync(g.image)) throw new Error("Missing gallery image: " + g.image);
+            const products = JSON.parse(fs.readFileSync("assets/products.json", "utf8"));
+            for (const p of products) {
+              const origPath = path.join("img", p.file);
+              const webpName = p.file.replace(/\.(png|jpg|jpeg)$/i, ".webp");
+              const optPath = path.join("img", "optimized", webpName);
+              if (!fs.existsSync(origPath)) throw new Error("Missing product image: " + origPath);
+              if (!fs.existsSync(optPath)) throw new Error("Missing optimized webp image: " + optPath);
             }
             for (let i = 1; i <= 34; i++) {
               const num = String(i).padStart(2, "0");
-              for (const ext of ["webp", "jpg", "png"]) {
-                const p = `assets/catalog/pages/page_${num}.${ext}`;
-                if (!fs.existsSync(p)) throw new Error("Missing catalog page: " + p);
+              for (const f of [`catalog_pages/page_${num}.webp`, `catalog_pages/page_${num}.jpg`, `catalog_pages/thumb_${num}.jpg`]) {
+                if (!fs.existsSync(f)) throw new Error("Missing catalog file: " + f);
               }
             }
-            console.log("Verified: 22 products, 13 gallery items, 102 catalog files, and PDF intact.");
+            console.log(`Verified: ${products.length} products (44 image files), 102 catalog files, and PDF intact.`);
           '
 
       - name: Fast-forward sync main to gh-pages branch
