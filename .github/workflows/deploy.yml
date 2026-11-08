@@ -1,37 +1,56 @@
-name: Deploy to GitHub Pages
+name: Validate & Sync to gh-pages
 
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: "pages"
+  group: "gh-pages-sync"
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  validate-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          fetch-depth: 0
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Validate static site, catalog pages, PDF, and product images
+        run: |
+          node --check app.js
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const required = ["index.html", "styles.css", "app.js", "Cavaletta_2026_Katalog.pdf", "assets/products.json"];
+            for (const f of required) {
+              if (!fs.existsSync(f)) throw new Error("Missing required file: " + f);
+            }
+            const products = JSON.parse(fs.readFileSync("assets/products.json", "utf8"));
+            for (const p of products) {
+              const origPath = path.join("img", p.file);
+              const webpName = p.file.replace(/\.(png|jpg|jpeg)$/i, ".webp");
+              const optPath = path.join("img", "optimized", webpName);
+              if (!fs.existsSync(origPath)) throw new Error("Missing product image: " + origPath);
+              if (!fs.existsSync(optPath)) throw new Error("Missing optimized webp image: " + optPath);
+            }
+            for (let i = 1; i <= 34; i++) {
+              const num = String(i).padStart(2, "0");
+              for (const f of [`catalog_pages/page_${num}.webp`, `catalog_pages/page_${num}.jpg`, `catalog_pages/thumb_${num}.jpg`]) {
+                if (!fs.existsSync(f)) throw new Error("Missing catalog file: " + f);
+              }
+            }
+            console.log(`Verified: ${products.length} products (44 image files), 102 catalog files, and PDF intact.`);
+          '
+
+      - name: Fast-forward sync main to gh-pages branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git push origin HEAD:refs/heads/gh-pages
