@@ -5,6 +5,8 @@
 
 Cavaletta resmi kurumsal web sitesi ve 2026 dijital katalog deneyimi. Akdeniz zanaatı, %100 yapıştırıcısız el dikişi ve geri dönüştürülmüş kordon dokularıyla şekillenen 21 parçalık imza seçki.
 
+- **Canlı Demo (GitHub Pages):** [https://mert-carli.github.io/CavalettaGuncel/](https://mert-carli.github.io/CavalettaGuncel/)
+
 ---
 
 ## ✨ Öne Çıkan Özellikler
@@ -45,14 +47,18 @@ Projeyi yerel ortamınızda görüntülemek için:
 1. Depoyu klonlayın:
    ```bash
    git clone https://github.com/mert-carli/CavalettaGuncel.git
+   cd CavalettaGuncel
    ```
 2. Klasöre girip `index.html` dosyasını herhangi bir modern tarayıcıda açın veya yerel sunucu başlatın:
    ```bash
-   # Python ile
    python -m http.server 8000
    ```
    Tarayıcınızda `http://localhost:8000` adresine gidin.
 
 ---
+
+## Geliştirici
+
+**Mevlana Mert Çarlı** — [GitHub](https://github.com/mert-carli) · [Portföy](https://mert-carli-cvu9.vercel.app)
 
 © 2026 CAVALETTA. Tüm hakları saklıdır.
